@@ -1,0 +1,103 @@
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- right panel -->
+  <div class="rightPanel"></div>
+
+  <!-- bottom panel -->
+  <div class="bottomPanel">
+    <h1>Developed by Mohd Afnan Alam</h1>
+    <div class="bpSocials">
+      <a
+        href="https://www.instagram.com/itsafnanalam/?hl=en"
+        target="_blank"
+        rel="no-referrer"
+      >
+        <img src="./img/ig.png" alt="" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/mohd-afnan-alam-b7a1b0226/"
+        target="_blank"
+        rel="no-referrer"
+      >
+        <img src="./img/li.png" alt="" />
+      </a>
+      <a
+        href="https://github.com/itsAfnanAlam"
+        target="_blank"
+        rel="no-referrer"
+      >
+        <img src="./img/gh.png" alt="" />
+      </a>
+      <a
+        href="https://leetcode.com/itsAfnanAlam/"
+        target="_blank"
+        rel="no-referrer"
+      >
+        <img src="./img/lc.png" alt="" />
+      </a>
+    </div>
+  </div>
+
+  <!-- red container div -->
+  <div style="position: relative; display: inline-block">
+    <!-- smaller red container div -->
+    <div
+      style="
+        position: absolute;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 20px;
+      "
+    >
+      <!-- player health -->
+      <div class="player">
+        <div style="background-color: red; height: 30px; width: 100%"></div>
+        <div
+          id="playerHealth"
+          style="
+            position: absolute;
+            background: #818cf8;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+          "
+        ></div>
+      </div>
+
+      <!-- timer -->
+      <div id="timer">10</div>
+      <!-- enemy health -->
+      <div class="enemy">
+        <div style="background-color: red; height: 30px"></div>
+        <div
+          id="enemyHealth"
+          style="
+            position: absolute;
+            background: #818cf8;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+          "
+        ></div>
+      </div>
+      <div></div>
+    </div>
+    <div id="displayText">Tie</div>
+    <canvas></canvas>
+  </div>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="js/utils.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="index.js"></script>
+</body>

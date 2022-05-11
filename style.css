@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Press+Start+2P&display=swap');* {
+  box-sizing: border-box;
+}
+
+.rightPanel {
+  background-image: url(./img/Player\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 443px 577px;
+  height: 577px;
+  width: 443px;
+  position: absolute;
+  right: 1%;
+}
+
+.bottomPanel {
+  background-color: rgb(115 115 115);
+  color: rgb(22, 22, 22);
+  height: 303px;
+  width: 100%;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+
+.bottomPanel > h1 {
+  font-family: "Luckiest Guy";
+  font-size: 59px;
+  position: relative;
+  text-align: center;
+}
+
+.bpSocials {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 30px;
+  color: aliceblue;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgb(28, 28, 28);
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.4s;
+}
+
+a:hover {
+  transform: rotate(45deg);
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: #373737;
+  border-radius: 10px;
+  transition: opacity 0.2s;
+}
+
+a > img {
+  height: 40px;
+  width: 40px;
+  filter: invert(22);
+}
+
+.player {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+#timer {
+  font-family: "Press Start 2P";
+  background-color: black;
+  width: 100px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 4px solid white;
+}
+
+.enemy {
+  position: relative;
+  width: 100%;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  border-right: 4px solid white;
+}
+
+#displayText {
+  font-family: "Press Start 2P";
+  position: absolute;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
